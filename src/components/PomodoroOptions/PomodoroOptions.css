@@ -1,0 +1,27 @@
+.pomodoro__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options__input {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+  gap: 8px;
+}
+
+.input__title {
+  font-weight: 400;
+}
+
+.input__field {
+  border: none;
+  text-align: center;
+  color: rgb(205, 205, 205);
+  font-size: 24px;
+  font-weight: 500;
+  border: 1px solid rgb(205, 205, 205);
+  background-color: rgb(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  max-width: 128px;
+}

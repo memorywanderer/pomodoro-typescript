@@ -1,0 +1,36 @@
+.pomodoro__timer:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.timer__title {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.timer__title:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.timer__descr:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.timer__descr {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.timer__countdown:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.countdown__minutes,
+.countdown__seconds {
+  font-size: 52px;
+  font-weight: 300;
+}
+
+.timer__controls {
+  display: grid;
+  gap: 8px;
+}

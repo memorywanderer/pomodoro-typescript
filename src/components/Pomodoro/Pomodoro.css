@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'PP Neue Montreal', sans-serif;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(3, 3, 3);
+  /* background-blend-mode: soft-light; */
+  color: var(--c-ty-primary);
+
+}
+
+button {
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--c-border-secondary);
+  color: var(--c-ty-primary);
+  font-weight: 300;
+}
+
+button i:not(:last-child) {
+  padding-right: 8px;
+}
+
+button span {
+  color: var(--c-ty-secondary)
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--c-accent-2);
+}
+
+button:hover span {
+  color: var(--c-accent-2);
+}
+
+.pomodoro {
+  border-radius: 3px;
+  min-width: 320px;
+  max-width: 512px;
+  padding: 24px;
+  border: 1px solid var(--c-border-primary);
+  z-index: 2;
+  color: var(--c-ty-primary);
+}
+
+
+.decoration {
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -5;
+}
+
+.decoration--one {
+  top: 12%;
+  right: 25%;
+  background: var(--c-accent);
+  filter: blur(200px)
+}
+
+.decoration--two {
+  bottom: 10%;
+  left: 23%;
+  background: var(--c-accent-2);
+  filter: blur(192px)
+}
+
+.absolute {
+  position: absolute;
+}
