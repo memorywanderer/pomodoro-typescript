@@ -117,7 +117,7 @@ export const reducer = (state: PomodoroStateType, action: PomodoroAction): Pomod
       if (+state.breakTime < MAX_TIME / MINUTE) {
         return {
           ...state,
-          breakTime: +state.breakTime - 1
+          breakTime: +state.breakTime + 1
         }
       } else {
         return {

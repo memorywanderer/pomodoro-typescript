@@ -16,7 +16,6 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-color: rgb(3, 3, 3);
-  /* background-blend-mode: soft-light; */
   color: var(--c-ty-primary);
 
 }
@@ -44,11 +43,11 @@ button span {
 
 button:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  color: var(--c-accent-2);
+  color: var(--c-accent);
 }
 
 button:hover span {
-  color: var(--c-accent-2);
+  color: var(--c-accent);
 }
 
 .pomodoro {
@@ -65,23 +64,24 @@ button:hover span {
 .decoration {
   height: 20rem;
   width: 20rem;
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   z-index: -5;
+  /* display: none; */
 }
 
 .decoration--one {
-  top: 12%;
-  right: 25%;
+  top: -15%;
+  right: -15%;
   background: var(--c-accent);
-  filter: blur(200px)
+  filter: blur(450px)
 }
 
 .decoration--two {
-  bottom: 10%;
-  left: 23%;
-  background: var(--c-accent-2);
-  filter: blur(192px)
+  bottom: -15%;
+  left: -15%;
+  background: var(--c-accent);
+  filter: blur(450px)
 }
 
 .absolute {
